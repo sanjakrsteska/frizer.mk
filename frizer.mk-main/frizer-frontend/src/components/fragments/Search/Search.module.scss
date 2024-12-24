@@ -1,0 +1,72 @@
+.searchForm {
+    margin: 6em auto 2em;
+    max-width: 50vw;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 0.5em;
+    justify-content: center;
+    position: relative;
+
+    input,
+    select {
+        width: 100%;
+        padding: 1em;
+        border: none;
+        border-radius: var(--border-radius);
+        background-color: #d9d9d9;
+    }
+
+    .primaryButton {
+        width: 100%;
+    }
+
+    .advancedToggle {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        text-align: left;
+        grid-column: 1 / -1;
+        cursor: pointer;
+
+        svg {
+            font-size: 0.9em;
+        }
+    }
+
+    .advancedMenu {
+        padding: 0 0 1em;
+        backdrop-filter: blur(0.2em);
+        border-radius: var(--border-radius);
+        position: absolute;
+        top: 6em;
+        width: 50%;
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        gap: 0.5em;
+        z-index: 5;
+    }
+
+    .showAdvancedMenu {
+        display: block;
+    }
+
+    @media screen and (max-width: 1150px) {
+        .advancedMenu {
+            width: 100%;
+            grid-column: 1 / -1;
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+
+        .searchByNameInput,
+        button {
+            grid-column: 1 / -1;
+        }
+
+        .advancedMenu {
+            top: 9em;
+        }
+    }
+}

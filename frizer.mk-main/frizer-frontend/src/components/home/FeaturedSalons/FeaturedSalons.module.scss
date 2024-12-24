@@ -1,0 +1,14 @@
+.featuredSalons{
+  padding: 0 8vw;
+    margin-top: 5em;
+    margin-bottom: 3em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 24%));
+    justify-content: center;
+    gap: 1em;
+  
+    .title{
+      grid-column: 1/-1;
+    }
+  }
+

@@ -1,0 +1,53 @@
+.toggleContainer {
+  min-height: 17em;
+  padding: 3em 4em;
+  border-radius: 0.5em;
+  background-color: var(--off-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0.15em 0.15em 1em 0.2em rgba(0, 0, 0, 0.25);
+
+  .title {
+    margin-bottom: 1em;
+    font-size: 2em;
+  }
+
+  .toggleButtons {
+    margin-bottom: 1em;
+
+    a {
+      text-decoration: none;
+
+      padding: 0.5em 1.2em;
+      border: none;
+      cursor: pointer;
+      box-sizing: border-box;
+      font-size: 0.9em;
+      color: var(--dark-color);
+      font-weight: bold;
+      transition: background-color 0.3s ease-in-out;
+      box-shadow: 0 0 0 0.08em var(--primary-color) inset;
+
+      &.activeButton {
+        background-color: var(--primary-color);
+        color: var(--light-color);
+      }
+
+      &.inactiveButton {
+        box-shadow: 0 0 0 0.08em var(--primary-color) inset
+      }
+
+      &:first-of-type {
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+      }
+
+      &:last-of-type {
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+      }
+    }
+  }
+}

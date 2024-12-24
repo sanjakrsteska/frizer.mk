@@ -1,0 +1,49 @@
+.card {
+    background-color: var(--lighter-color);
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: 1em;
+    display: grid;
+
+    .image {
+        width: 6em;
+        height: 6em;
+        object-fit: cover;
+        border-radius: var(--border-radius);
+        justify-self: center;
+    }
+
+    .title {
+        margin-top: 1em;
+    }
+
+    .rating {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+
+        svg {
+            color: var(--full-star-color);
+        }
+    }
+
+    .rating> :first-child {
+        margin-right: 0.5em;
+    }
+
+
+    .primaryButton {
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 50em) {
+    .card{
+        .image{
+            margin-top: 1em;
+        }
+        .primaryButton{
+            margin-top: 2em;
+            width: 70%;
+        }  
+    }
+}

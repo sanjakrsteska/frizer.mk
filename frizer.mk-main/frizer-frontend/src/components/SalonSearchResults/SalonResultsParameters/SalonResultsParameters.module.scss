@@ -1,0 +1,20 @@
+.searchFilters{
+    grid-row: 2;
+}
+.searchFilter {
+    background-color: var(--lighter-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 1em;
+
+    .title {
+        padding: 1em 1.5em;
+        font-weight: bold;
+        background-color: var(--darker-color);
+        border-radius: var(--border-radius);
+    }
+
+    p,
+    div {
+        padding: 0.5em 1.5em;
+    }
+}

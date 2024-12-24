@@ -1,0 +1,18 @@
+.buttons {
+    display: flex;
+    gap: 1em;
+    margin-top: 0.5em;
+
+    button {
+        padding: 1em 2.5em;
+        border: none;
+        border-radius: var(--border-radius);
+        background-color: var(--lighter-color);
+        transition: background-color 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .activeButton {
+        background-color: var(--darker-color);
+    }
+}

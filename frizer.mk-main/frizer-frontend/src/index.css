@@ -1,0 +1,107 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --font-color: #20232e;
+  --accent-font-color: #464c62;
+  --black-color: hsl(0, 0%, 0%);
+  --background-color: #ececec;
+  --darker-color: #c0c0c0;
+  --lighter-color: #d9d9d9;
+  --light-color: #fff;
+  --off-white: #f7f7f7;
+  --dark-color: #20232e;
+  --full-star-color: #f5b301;
+  --empty-star-color: #ccc;
+  --primary-color: #ff0b23;
+  --secondary-color: #333;
+  --secondary-accent-color: #757575;
+  --accent-color: #ff5669;
+  --coin-color: #b2ba54;
+  --upload-button-color: #4CAF50;
+  --upload-button-accent-color: #7ebb80;
+  --active-color: #4CAF50;
+  --inactive-color: #ff0b23;
+
+  --border-radius: 0.5em;
+
+  --small-font: 1em;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.primaryButton {
+  padding: 1em;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
+  color: var(--off-white);
+  font-weight: bold;
+  cursor: pointer;
+}
+.primaryButton:hover{
+  background-color: var(--accent-color);
+}
+
+.secondaryButton {
+  padding: 0.8em 1em;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-color);
+  color: var(--off-white);
+  font-weight: bold;
+  cursor: pointer;
+}
+.secondaryButton a{
+  color: var(--off-white);
+  text-decoration: none;
+}
+.secondaryButton:hover {
+  background-color: var(--secondary-accent-color);
+}
+
+.borderedButton {
+  margin-top: 2em;
+  border-radius: var(--border-radius);
+  border: 0.125em solid #20232e;
+  color: var(--dark-color);
+  padding: 0.5em 2em;
+  font-weight: bold;
+  background: none;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+}
+.borderedButton:hover {
+  background-color: #c7c7c7;
+}
+
+.secondaryButton{
+  padding: 0.8em 1em;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-color);
+  color: var(--off-white);
+  cursor: pointer;
+}
+.secondaryButton:hover{
+  background-color: var(--secondary-accent-color);
+}

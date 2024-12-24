@@ -1,0 +1,45 @@
+.review {
+    padding: 1em 2em;
+    width: 60vw;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+}
+
+.review .row {
+    display: flex;
+    margin: 0.5em 0;
+}
+
+.reviewStars {
+    .star {
+        display: block;
+        color: var(--empty-star-color);
+    }
+
+    .star.full {
+        color: var(--full-star-color);
+    }
+}
+
+
+.review .row:first-of-type {
+    justify-content: space-between;
+}
+
+.review .reviewDate {
+    font-size: 0.8em;
+    margin-bottom: 0.4em;
+}
+
+@media only screen and (max-width: 50em) {
+    .review {
+        width: 100%;
+    }
+}
+
+.reviewStars {
+    display: flex;
+    gap: 0.3em;
+    justify-content: center;
+    align-items: center;
+}

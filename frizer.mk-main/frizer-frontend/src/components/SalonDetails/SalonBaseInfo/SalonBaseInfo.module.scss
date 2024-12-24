@@ -1,0 +1,82 @@
+.salonProfile {
+  margin-top: 10vh;
+}
+
+.row {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+
+  h1{
+    display: inline-block;
+    margin-right: 0.5em;
+  }
+}
+
+.row:not(:first-of-type){
+  margin-top: 1em;
+}
+
+.backgroundImage {
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6));
+    z-index: 1;
+  }
+
+  button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1em;
+    color: rgb(0, 122, 188);
+    background-color: white;
+    border: 1px solid rgb(0, 122, 188);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+}
+
+img {
+  border-radius: var(--border-radius);
+  height: 5em;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+}
+
+.heartIcon {
+  cursor: pointer;
+}
+
+.heartIcon:hover {
+  color: red;
+  transition: color 0.3s ease-in-out;
+
+}
+
+.addedToFavorites {
+  color: red;
+}
+
+.addedToFavorites:hover {
+  color: rgba(172, 4, 4, 0.936);
+  transition: color 0.3s ease-in-out;
+
+}
+
+.starIcon {
+  color: #ffdd00;
+}

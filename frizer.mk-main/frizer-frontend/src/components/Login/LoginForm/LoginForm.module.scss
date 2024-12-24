@@ -1,0 +1,38 @@
+.loginForm {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+
+    &>* {
+        border: none;
+        border-radius: 1em;
+    }
+
+    label {
+        margin-bottom: 0.3em;
+    }
+
+    input {
+        padding: 0.6em 0.8em;
+        margin-bottom: 0.5em;
+        border: none;
+        border-bottom: 0.125em solid black;
+        width: 20em;
+        font-size: 1em;
+        align-self: center;
+    }
+
+    .primaryButton {
+        margin-top: 1em;
+    }
+
+    .error {
+        color: red;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    }
+
+    .error > * {
+        margin-right: 0.2em;
+    }
+}
